@@ -6,12 +6,16 @@ body{
   text-align: center;
   opacity: 0.9;
 }
-,container {
+.container {
   display: flex;
   justify-content: center;
-  flex-wrap:
+  flex-wrap: wrap;
 }
 
+h2  {
+  margin: 0;
+  padding: 10px;
+}
 /* -----------------  Header -----------------------*/
 header {
 border-bottom: 1px solid white;
@@ -27,7 +31,7 @@ z-index: 1;
 background-color: black;
 }
 
-img,logo  {
+ .logo img  {
   height: 50px;
   margin-left: 10px;
   flex-grow: 1;
@@ -52,21 +56,19 @@ nav a {
   padding-top: 69px;
   width: 1200px;
   margin: auto;
-  /*display: flex;
-  flex-direction: column;*/
+
 }
 
 #mission {
   background-image: url(../images/img-mission-background.jpg);
   height: 700px;
   align-items:  center;
-  display: flex;
+
 }
 
 .mission-content {
-  background-color: black;
   width: 100%;
-
+  background-color: black;
 }
 
 #featured {
@@ -75,28 +77,44 @@ nav a {
   margin: auto;
   padding-top: 50px;
 }
-.items {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+
 
 
 .item {
-  width: 300px;
-  display: block;
   padding: 5px;
 }
 
 .item img {
-  margin: 10px;
   height: 200px;
+  margin: 10px;
+  display: block;
 }
 
 .item span {
-  margin-top: 10px;
   display: block;
+  text-align: center;
+  padding: 5px;
 }
+/*-------------------- Locations -----------------------*/
+#locations {
+  background-image: url(../images/img-locations-background.jpg);
+  height: 500px;
+  padding-top: 50px;
+}
+
+.location {
+  width: 300px;
+  background-color: black;
+  opacity: 1.0;
+  margin: 20px;
+  flex-direction: column;   /*  this is to make the container square */
+}
+/* ------------------- Contact --------------------------*/
+#contact {
+  height: 200px;
+}
+
+
 /* ------------------- Footer --------------------------*/
 footer {
   text-align: left;
