@@ -4,8 +4,13 @@ body{
   color: seashell;
   font-size: 22px;
   text-align: center;
+  opacity: 0.9;
 }
-
+,container {
+  display: flex;
+  justify-content: center;
+  flex-wrap:
+}
 
 /* -----------------  Header -----------------------*/
 header {
@@ -47,8 +52,8 @@ nav a {
   padding-top: 69px;
   width: 1200px;
   margin: auto;
-  display: flex;
-  flex-direction: column;
+  /*display: flex;
+  flex-direction: column;*/
 }
 
 #mission {
@@ -66,7 +71,31 @@ nav a {
 
 #featured {
   width: 1000px;
+  height: 700px;
   margin: auto;
+  padding-top: 50px;
+}
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.item {
+  width: 300px;
+  display: block;
+  padding: 5px;
+}
+
+.item img {
+  margin: 10px;
+  height: 200px;
+}
+
+.item span {
+  margin-top: 10px;
+  display: block;
 }
 /* ------------------- Footer --------------------------*/
 footer {
